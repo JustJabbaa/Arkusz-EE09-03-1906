@@ -1,0 +1,7 @@
+1. INSERT INTO `zawody_wedkarskie` (`id`, `Karty_wedkarskie_id`, `Lowisko_id`, `data_zawodow`, `sedzia`) VALUES (NULL, '2', '4', '2018-09-28', 'Tomasz Kowal')
+2. SELECT `zawody_wedkarskie`.`data_zawodow` FROM `zawody_wedkarskie` WHERE `zawody_wedkarskie`.sedzia = 'Jan Kowalewski'
+3. SELECT `karty_wedkarskie`.`imie`, `karty_wedkarskie`.`nazwisko`
+    FROM `karty_wedkarskie`
+    join zawody_wedkarskie on karty_wedkarskie.id = zawody_wedkarskie.Karty_wedkarskie_id
+    WHERE `zawody_wedkarskie`.`id` = '3'
+4. UPDATE `karty_wedkarskie` SET `punkty` = '10' WHERE `karty_wedkarskie`.`id` = 2
